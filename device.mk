@@ -10,6 +10,17 @@ DEVICE_PATH := device/huawei/liszt
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.hi3635 \
+    init.hi3635.chip.usb.rc \
+    init.hi3635.connectivity.rc \
+    init.hi3635.gps.rc \
+    init.hi3635.power.rc \
+    init.hi3635.rc \
+    init.hi3635.usb.rc \
+    ueventd.hi3635.rc
+
 # Screen
 TARGET_SCREEN_HEIGHT := 1200
 TARGET_SCREEN_WIDTH := 1920
