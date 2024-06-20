@@ -45,6 +45,15 @@ TARGET_BOOTLOADER_BOARD_NAME := hi3635
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
+# Dex
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00678000
 BOARD_KERNEL_PAGESIZE := 2048
