@@ -33,5 +33,10 @@ PRODUCT_PACKAGES += \
     init.hi3635.usb.rc \
     ueventd.hi3635.rc
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_icu \
+    libshim_gui
+
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
