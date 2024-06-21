@@ -22,6 +22,10 @@ $(call inherit-product, vendor/huawei/mozart/mozart-vendor.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Keylayout
+PRODUCT_PACKAGES += \
+    usbaudio.kl
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.hi3635 \
