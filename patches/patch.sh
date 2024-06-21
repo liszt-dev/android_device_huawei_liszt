@@ -44,7 +44,9 @@ for LINE in $(find -L -name *.patch | sort ); do
 
     cd $REPO
 
-    echo "Applying patch: $ROM - $LINE"
+    OUT=$(echo "$REPO" | sed 's|^\./||')
+
+    echo -e "\033[33mApplying: $OUT -> $(basename $PATCH)\033[0m"
 
     patch -p1 --follow-symlinks --no-backup-if-mismatch < $PATCH &> /dev/null
 
@@ -54,6 +56,8 @@ for LINE in $(find -L -name *.patch | sort ); do
 
     cd $THISDIR
 done
+
+echo -e "\033[32mSuccessfully applied ROM patches!\033[0m"
 
 cd $ROM
 

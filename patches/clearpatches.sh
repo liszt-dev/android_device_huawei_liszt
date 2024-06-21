@@ -37,8 +37,10 @@ do
 		cd $THISDIR
 		continue
 	fi
+        
+        OUT=$(echo "$REPO" | sed 's|^\./||')
 
-	echo "Clearing: $REPO"
+	echo -e "\033[33mClearing: $OUT\033[0m"
 
 	cd $REPO
 
@@ -59,3 +61,4 @@ done
 }
 
 clear_set cm
+echo -e "\033[32mSuccessfully cleared ROM patches!\033[0m"
