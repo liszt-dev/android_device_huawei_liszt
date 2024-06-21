@@ -118,6 +118,9 @@ BOARD_VENDOR_PLATFORM := hi3635
 # Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.hi3635
+
 # SE-Policy
 BOARD_SEPOLICY_DIRS += \
 	device/huawei/mozart/sepolicy
