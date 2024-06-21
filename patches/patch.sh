@@ -23,6 +23,11 @@ if [[ "$CLEAR" == "" ]]; then
     ./clearpatches.sh $ROM
 fi
 
+if ! find -L -name '*.patch' | read; then
+    echo -e "\033[32mNo applicable ROM patches!\033[0m"
+    exit 0
+fi
+
 cd $ROM
 
 for LINE in $(find -L -name *.patch | sort ); do
