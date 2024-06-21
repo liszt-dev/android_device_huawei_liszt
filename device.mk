@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/gps/gps47531config.xml:system/etc/gps47531config.xml \
     $(DEVICE_PATH)/configs/gps/gps47531config_beta.xml:system/etc/gps47531config_beta.xml
 
+# Hardware Composer
+PRODUCT_PACKAGES += \
+    hwcomposer.hi3635
+
 # Media
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
