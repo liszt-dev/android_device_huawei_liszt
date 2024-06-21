@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 
-* Copyright (C) 2017 The LineageOS Project
+* Copyright (C) 2024 The LineageOS Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -27,9 +27,13 @@ BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
 WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 -->
+
 <resources>
     <!-- Enable doze mode -->
     <bool name="doze_display_state_supported">true</bool>
+
+    <!-- Whether we're using the tablet-optimized recents interface (we use this
+     value at runtime for some things) -->
+    <bool name="config_recents_interface_for_tablets">true</bool>
 </resources>
