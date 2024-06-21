@@ -1496,7 +1496,6 @@ $(VENDOR_PATH)/lib64/libext2_blkid.so:/system/lib64/libext2_blkid.so \
 $(VENDOR_PATH)/lib64/lib_k3_ffmpeg.so:/system/lib64/lib_k3_ffmpeg.so \
 $(VENDOR_PATH)/lib64/libcrypto2.so:/system/lib64/libcrypto2.so \
 $(VENDOR_PATH)/lib64/libmedia.so:/system/lib64/libmedia.so \
-$(VENDOR_PATH)/lib64/libhwlog_jni.so:/system/lib64/libhwlog_jni.so \
 $(VENDOR_PATH)/lib64/libstagefright_soft_g711dec.so:/system/lib64/libstagefright_soft_g711dec.so \
 $(VENDOR_PATH)/lib64/libmtp.huawei.so:/system/lib64/libmtp.huawei.so \
 $(VENDOR_PATH)/lib64/libclcore_debug.bc:/system/lib64/libclcore_debug.bc \
@@ -1605,6 +1604,7 @@ $(VENDOR_PATH)/lib64/libProjectMenuCustEx_jni.so:/system/lib64/libProjectMenuCus
 $(VENDOR_PATH)/lib64/libext2_profile.so:/system/lib64/libext2_profile.so \
 $(VENDOR_PATH)/lib64/libdrmbitmap.huawei.so:/system/lib64/libdrmbitmap.huawei.so \
 $(VENDOR_PATH)/lib64/lib_runningtest.so:/system/lib64/lib_runningtest.so \
+$(VENDOR_PATH)/lib64/libhwlog.so:/system/lib64/libhwlog.so \
 $(VENDOR_PATH)/lib64/libm.so:/system/lib64/libm.so \
 $(VENDOR_PATH)/lib64/libmedia_jni.so:/system/lib64/libmedia_jni.so \
 $(VENDOR_PATH)/lib64/libpowermanager.so:/system/lib64/libpowermanager.so \
