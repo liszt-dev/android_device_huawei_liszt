@@ -106,6 +106,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.app_widgets.xml:system/etc/permissions/android.software.app_widgets.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
+# Properties
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.enable_boot_charger_mode=0 \
+    persist.sys.usb.config=manufacture,adb
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.hi3635 \
