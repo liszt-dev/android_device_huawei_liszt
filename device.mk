@@ -22,6 +22,39 @@ $(call inherit-product, vendor/huawei/mozart/mozart-vendor.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    $(DEVICE_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
+    $(DEVICE_PATH)/configs/audio/topazhp.cfg:system/etc/topazhp.cfg
+
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+
+# GPS
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/gps/clatd.conf:system/etc/clatd.conf \
+    $(DEVICE_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
+    $(DEVICE_PATH)/configs/gps/gps47531config.xml:system/etc/gps47531config.xml \
+    $(DEVICE_PATH)/configs/gps/gps47531config_beta.xml:system/etc/gps47531config_beta.xml
+
+# Media
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
+    $(DEVICE_PATH)/configs/media/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+    $(DEVICE_PATH)/configs/media/media_profiles.xml:system/etc/media_profiles.xml
+
+# Thermal
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/thermal/thermald.xml:system/etc/thermald.xml \
+    $(DEVICE_PATH)/configs/thermal/thermald_performance.xml:system/etc/thermald_performance.xml
+
+# Wi-Fi
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+
 # Keylayout
 PRODUCT_PACKAGES += \
     usbaudio.kl
