@@ -147,5 +147,9 @@ PRODUCT_PACKAGES += \
     libshim_icu \
     libshim_gui
 
+# USB
+PRODUCT_PACKAGES += \
+    com.android.future.usb.accessory
+
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
