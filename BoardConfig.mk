@@ -91,3 +91,7 @@ BOARD_VENDOR_PLATFORM := hi3635
 
 # Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
+
+# SE-Policy
+BOARD_SEPOLICY_DIRS += \
+	device/huawei/mozart/sepolicy
