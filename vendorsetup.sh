@@ -13,6 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Apply ROM patches
+echo -e "\033[31mAutomatically applying ROM patches...\033[0m"
+THISDIR=$PWD
+cd ${THISDIR}/device/huawei/mozart/patches
+./patch.sh
+cd ${THISDIR}
+sleep 1
+
+# Add lunch combo options
 add_lunch_combo lineage_mozart-userdebug
 add_lunch_combo lineage_mozart-user
 add_lunch_combo lineage_mozart-eng
