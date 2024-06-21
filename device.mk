@@ -134,6 +134,10 @@ PRODUCT_PACKAGES += \
     init.hi3635.usb.rc \
     ueventd.hi3635.rc
 
+# Screen
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1200
+
 # Shims
 PRODUCT_PACKAGES += \
     libshim_icu \
