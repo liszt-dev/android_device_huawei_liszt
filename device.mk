@@ -44,6 +44,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
+# Debug
+PRODUCT_PACKAGES += \
+    dlopen32 \
+    dlopen64
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/gps/clatd.conf:system/etc/clatd.conf \
