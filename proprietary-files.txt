@@ -1,3 +1,4 @@
+$(VENDOR_PATH)/TBM_Latour.bin:/system/TBM_Latour.bin \
 $(VENDOR_PATH)/bin/pm:/system/bin/pm \
 $(VENDOR_PATH)/bin/9b17660b-8968-4eed-917e-dd32379bd548.sec:/system/bin/9b17660b-8968-4eed-917e-dd32379bd548.sec \
 $(VENDOR_PATH)/bin/iptables:/system/bin/iptables \
@@ -931,6 +932,7 @@ $(VENDOR_PATH)/hw_oem/M2-801W/xml/hw_defaults.xml:/system/hw_oem/M2-801W/xml/hw_
 $(VENDOR_PATH)/hw_oem/M2-801W/xml/hw_launcher_default_workspace_simpleui.xml:/system/hw_oem/M2-801W/xml/hw_launcher_default_workspace_simpleui.xml \
 $(VENDOR_PATH)/hw_oem/M2-801W/xml/hw_launcher_default_config.xml:/system/hw_oem/M2-801W/xml/hw_launcher_default_config.xml \
 $(VENDOR_PATH)/isp/isp.bin:/system/isp/isp.bin \
+$(VENDOR_PATH)/isp.bin:/system/isp.bin \
 $(VENDOR_PATH)/lib/libSmartAE.so:/system/lib/libSmartAE.so \
 $(VENDOR_PATH)/lib/libstagefright_soft_ffmpegaudiodec.so:/system/lib/libstagefright_soft_ffmpegaudiodec.so \
 $(VENDOR_PATH)/lib/libpdfium.so:/system/lib/libpdfium.so \
@@ -1772,11 +1774,13 @@ $(VENDOR_PATH)/lib64/libsonivox.so:/system/lib64/libsonivox.so \
 $(VENDOR_PATH)/lib64/libbtaddrjni.so:/system/lib64/libbtaddrjni.so \
 $(VENDOR_PATH)/lib64/libradio.so:/system/lib64/libradio.so \
 $(VENDOR_PATH)/lib64/libperfhub.so:/system/lib64/libperfhub.so \
+$(VENDOR_PATH)/miniBoot.bin:/system/miniBoot.bin \
 $(VENDOR_PATH)/miniisp/TBM_Latour.bin:/system/miniisp/TBM_Latour.bin \
 $(VENDOR_PATH)/miniisp/miniBoot.bin:/system/miniisp/miniBoot.bin \
 $(VENDOR_PATH)/miniisp/miniBoot2.bin:/system/miniisp/miniBoot2.bin \
 $(VENDOR_PATH)/miniisp/TBM_Latour2.bin:/system/miniisp/TBM_Latour2.bin \
 $(VENDOR_PATH)/miniisp/chip_det.bin:/system/miniisp/chip_det.bin \
+$(VENDOR_PATH)/ons.bin:/system/ons.bin \
 $(VENDOR_PATH)/phone.prop:/system/phone.prop \
 $(VENDOR_PATH)/vendor/framework/com.huawei.audioalgo.jar:/system/vendor/framework/com.huawei.audioalgo.jar \
 $(VENDOR_PATH)/vendor/etc/audio_policy.conf:/system/vendor/etc/audio_policy.conf \
