@@ -121,7 +121,7 @@ PRODUCT_PACKAGES += \
 # Properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.enable_boot_charger_mode=0 \
-    persist.sys.usb.config=manufacture,adb
+    persist.sys.usb.config=adb,mtp
 
 # Ramdisk
 PRODUCT_PACKAGES += \
