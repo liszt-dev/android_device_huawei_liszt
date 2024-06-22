@@ -79,9 +79,6 @@ Only the three quirks included above are recognized at this point:
 
     <Include href="media_codecs_google_audio.xml" />
     <Include href="media_codecs_google_telephony.xml" />
-    <!--DTS2015042200087 00208515 20150422 begin-->
-    <Include href="media_codecs_dts_audio.xml" />
-    <!--DTS2015042200087 00208515 20150422 end-->
 
     <Settings>
     <Setting name="max-video-encoder-input-buffers" value="5" />
