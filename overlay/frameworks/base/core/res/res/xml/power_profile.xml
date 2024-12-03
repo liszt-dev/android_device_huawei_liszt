@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 **
-** Copyright (C) 2024, The Android Open Source Project
+** Copyright 2009, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License")
 ** you may not use this file except in compliance with the License.
@@ -16,15 +16,15 @@
 ** limitations under the License.
 */
 -->
+<!-- DTS2014072901830 zwx216556 begin-->
 <device name="Android">
-
   <!-- All values are in mA except as noted -->
   <item name="none">0</item>
-  <item name="screen.on">126</item> <!-- min brite -->
+  <item name="screen.on">356</item> <!-- min brite -->
   <item name="bluetooth.active">97</item>
   <item name="bluetooth.on">0.6</item>
   <item name="bluetooth.at">0.6</item> <!-- TBD -->
-  <item name="screen.full">466</item> <!-- backlight 20 leds -->
+  <item name="screen.full">1058</item> <!-- backlight 20 leds -->
   <item name="wifi.on">6.6</item>
   <item name="wifi.active">128</item>
   <item name="wifi.scan">146</item>
@@ -32,19 +32,16 @@
   <item name="dsp.video">176</item>
   <item name="radio.active">190</item>
   <item name="gps.on">70</item>
-  <item name="battery.capacity">4230</item> <!-- 4000mAh -->
+  <item name="battery.capacity">6600</item> <!-- 4650mAh -->
   <item name="radio.scanning">15</item> <!-- TBD -->
-
   <!-- Current consumed by the radio at different signal strengths, when paging  -->
-  <array name="radio.on"> <!-- 1 entry per signal strength bin, TBD -->
-      <value>15.0</value>
+   <array name="radio.on"> <!-- 1 entry per signal strength bin, TBD -->
+      <value>0.1</value>
       <value>10.0</value>
 	  <value>10.0</value>
 	  <value>10.0</value>
 	  <value>10.0</value>
   </array>
-  
-  <!-- CPU speeds -->
   <array name="cpu.speeds">
     <value>403200</value> <!-- 400 MHz CPU speed -->
     <value>604800</value> <!-- 600 MHz CPU speed -->
@@ -58,14 +55,12 @@
     <value>1708800</value><!-- 1.7 GHz CPU speed -->
     <value>1804800</value><!-- 1.8 GHz CPU speed -->
     <value>2016000</value><!-- 2.1 GHz CPU speed -->
+    
   </array>
-
   <!-- Power consumption in suspend -->
   <item name="cpu.idle">3</item> <!-- k3v3 -->
-
   <!-- Power consumption due to wake lock held -->
   <item name="cpu.awake">40.2</item> <!-- k3v3 -->
-
   <!-- Power consumption at different speeds -->
   <array name="cpu.active">
       <value>105</value>
@@ -80,6 +75,7 @@
       <value>1105</value>
       <value>1335</value>
       <value>1655</value>
+      
   </array>
-
 </device>
+<!-- DTS2014072901830 zwx216556 end-->
