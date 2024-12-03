@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/huawei/mozart
+DEVICE_PATH := device/huawei/liszt
 
 # Architecture
 TARGET_ARCH := arm64
@@ -41,7 +41,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 ARCH_ARM_HIGH_OPTIMIZATION := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := hi3635,mozart
+TARGET_OTA_ASSERT_DEVICE := hi3635,liszt
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
@@ -97,8 +97,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image
-TARGET_KERNEL_SOURCE := kernel/huawei/mozart
-TARGET_KERNEL_CONFIG := mozart_defconfig
+TARGET_KERNEL_SOURCE := kernel/huawei/liszt
+TARGET_KERNEL_CONFIG := liszt_defconfig
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -124,11 +124,10 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.hi3635
 
-# SE-Policy
-BOARD_SEPOLICY_DIRS += \
-	device/huawei/mozart/sepolicy
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
-# Wi-Fi
+# Wifi
 TARGET_USES_64_BIT_BCMDHD	 := true
 BOARD_WLAN_DEVICE                := bcmdhd
 BOARD_WLAN_DEVICE_REV            := bcm4339

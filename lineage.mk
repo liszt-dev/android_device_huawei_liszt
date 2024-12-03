@@ -22,19 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
-# Inherit from mozart device.
-$(call inherit-product, device/huawei/mozart/device.mk)
+# Inherit from liszt device.
+$(call inherit-product, device/huawei/liszt/device.mk)
 
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
 
-PRODUCT_NAME := lineage_mozart
-PRODUCT_DEVICE := mozart
+PRODUCT_NAME := lineage_liszt
+PRODUCT_DEVICE := liszt
 PRODUCT_BRAND := huawei
 PRODUCT_MANUFACTURER := Huawei
-PRODUCT_MODEL := MediaPad M2 8.0
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="Huawei/MOZART/hi3635:6.0/MRA58K/huawei11291304:user/test-keys" \
-    PRIVATE_BUILD_DESC="MOZART-user 6.0 MRA58K eng.huawei.20161129.130256 test-keys" \
-    TARGET_DEVICE=hi3635
+PRODUCT_MODEL := MediaPad M2 10.0

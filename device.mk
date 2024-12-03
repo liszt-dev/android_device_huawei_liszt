@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/huawei/mozart
+DEVICE_PATH := device/huawei/liszt
 
 # Inherit vendor blobs
-$(call inherit-product, vendor/huawei/mozart/mozart-vendor.mk)
+$(call inherit-product, vendor/huawei/liszt/liszt-vendor.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal

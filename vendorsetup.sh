@@ -16,12 +16,10 @@
 # Apply ROM patches
 echo -e "\033[31mAutomatically applying ROM patches...\033[0m"
 THISDIR=$PWD
-cd ${THISDIR}/device/huawei/mozart/patches
+cd ${THISDIR}/device/huawei/liszt/patches
 ./patch.sh
 cd ${THISDIR}
 sleep 1
 
 # Add lunch combo options
-add_lunch_combo lineage_mozart-userdebug
-add_lunch_combo lineage_mozart-user
-add_lunch_combo lineage_mozart-eng
+add_lunch_combo lineage_liszt-userdebug
