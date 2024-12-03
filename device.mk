@@ -36,9 +36,9 @@ PRODUCT_PACKAGES += \
     tinypcminfo
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    $(DEVICE_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
-    $(DEVICE_PATH)/configs/audio/topazhp.cfg:system/etc/topazhp.cfg
+    $(DEVICE_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    $(DEVICE_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
+    $(DEVICE_PATH)/audio/topazhp.cfg:system/etc/topazhp.cfg
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
