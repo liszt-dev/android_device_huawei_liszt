@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
     $(DEVICE_PATH)/audio/topazhp.cfg:system/etc/topazhp.cfg
 
+# Charger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.enable_boot_charger_mode=0
+
 # Bluetooth
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
@@ -136,11 +140,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.hi3635
 
-# Properties
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.enable_boot_charger_mode=0 \
-    persist.sys.usb.config=adb,mtp
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.hi3635 \
@@ -169,6 +168,9 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp
 
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
