@@ -152,6 +152,11 @@ PRODUCT_PACKAGES += \
     init.hi3635.usb.rc \
     ueventd.hi3635.rc
 
+PRODUCT_PACKAGES += \
+    hw_healthd \
+    oeminfo_nvm_server \
+    teecd
+
 # Screen
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1200
