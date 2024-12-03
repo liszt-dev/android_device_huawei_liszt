@@ -61,6 +61,5 @@
 /dev/vmodem					0660 radio radio
 
 /dev/ear_pa					0660 media media
-/dev/tfa9895					0660 media media
 
 /dev/nve0					0770 root system

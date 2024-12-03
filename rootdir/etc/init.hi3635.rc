@@ -453,8 +453,6 @@ on post-fs-data
 on early-boot
     write /sys/bus/platform/drivers/huawei,altek6045/firmware /system/miniisp/
 
-    chmod 0660 /dev/tfa9895
-    chown media media /dev/tfa9895
     chmod 0660 /dev/ear_pa
     chown media media /dev/ear_pa
 
