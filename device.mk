@@ -86,7 +86,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/thermal/thermald.xml:system/etc/thermald.xml \
     $(DEVICE_PATH)/configs/thermal/thermald_performance.xml:system/etc/thermald_performance.xml
 
-# Wi-Fi
+# Wifi
 PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
@@ -95,8 +95,8 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+    $(DEVICE_PATH)/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    $(DEVICE_PATH)/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 # Keylayout
 PRODUCT_PACKAGES += \
