@@ -48,6 +48,21 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
+# Debug
+ifeq ($(ENABLE_DEBUG),true)
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=adb,mtp
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    ro.secure=0
+
+PRODUCT_PACKAGES += \
+    dlopen32 \
+    dlopen64 \
+    sh
+endif
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprint.kl
