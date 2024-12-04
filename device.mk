@@ -162,8 +162,9 @@ TARGET_SCREEN_WIDTH := 1920
 
 # Shims
 PRODUCT_PACKAGES += \
+    libshim_gui \
     libshim_icu \
-    libshim_gui
+    libshim_thermal
 
 # USB
 PRODUCT_PACKAGES += \
