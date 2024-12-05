@@ -960,13 +960,6 @@ on charger
     start hw_charger
 
 # Start services
-
-service HwCamCfgSvr /system/bin/HwCamCfgSvr hi3635 LISZT
-    class main
-    user media
-    group audio camera inet net_bt net_bt_admin net_bw_acct wakelock system
-    disabled
-
 service thermal-daemon /system/bin/thermal-daemon
     class main
     user system 
