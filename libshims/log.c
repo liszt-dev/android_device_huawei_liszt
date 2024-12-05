@@ -18,3 +18,8 @@ extern int __android_logPower_print()
 {
     return 0;
 }
+
+extern int __android_janklog_print()
+{
+    return 0;
+}
