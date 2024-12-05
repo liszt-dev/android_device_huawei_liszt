@@ -24,12 +24,12 @@ ro.config.enable_rcc=true
 ro.radio.noril=true
 ro.carrier=wifi-only
 
-# SD-Card
+# SDcard
 ro.sys.sdcardfs=true
 
 # Sensors
 ro.config.hw_sensorhub=true
 
-# Wi-Fi
+# Wifi
 wifi.interface=wlan0
 persist.sys.usb.config.extra=none

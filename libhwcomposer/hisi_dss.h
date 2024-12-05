@@ -1,16 +1,7 @@
-/* include/linux/hisi_dss.h
+/*
+ * Copyright (C) 2024 The LineageOS Project
  *
- * Copyright (c) 2013-2014, Hisilicon Tech. Co., Ltd. All rights reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 and
- * only version 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * SPDX-License-Identifier: Apache-2.0
  */
 
 #ifndef _HISI_DSS_H_
@@ -19,7 +10,6 @@
 #include <linux/types.h>
 #include <linux/fb.h>
 #include "hisi_fb_common.h"
-
 
 #define HISIFB_VSYNC_CTRL _IOW(HISIFB_IOCTL_MAGIC, 0x02, unsigned int)
 #define HISIFB_DSS_CLK_RATE_SET _IOW(HISIFB_IOCTL_MAGIC, 0x04, struct dss_clk_rate)
