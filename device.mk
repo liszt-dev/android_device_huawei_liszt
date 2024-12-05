@@ -179,7 +179,7 @@ TARGET_SCREEN_WIDTH := 1920
 PRODUCT_PACKAGES += \
     libshim_gui \
     libshim_icu \
-    libshim_thermal \
+    libshim_log \
     libshim_wvm
 
 # USB
