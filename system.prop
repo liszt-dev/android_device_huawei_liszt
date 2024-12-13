@@ -14,7 +14,13 @@ ro.config.mmu_en=1
 persist.panel.orientation=90
 
 # Media
+persist.sys.sr_google_avc_enc=1
+persist.sys.google_avc_enc=0
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
 media.stagefright.use-awesome=false
+persist.camera.cap_sup_back=3
+persist.camera.cap_sup_front=3
 
 # Performance
 ro.am.reschedule_service=true
@@ -30,6 +36,8 @@ ro.sys.sdcardfs=true
 # Sensors
 ro.config.hw_sensorhub=true
 
+# USB
+persist.sys.usb.config.extra=none
+
 # Wifi
 wifi.interface=wlan0
-persist.sys.usb.config.extra=none
