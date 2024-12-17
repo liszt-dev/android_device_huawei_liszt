@@ -130,6 +130,9 @@ PRODUCT_PACKAGES += \
     oeminfo_nvm_server \
     teecd
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/configs
+
 # Renderscript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
