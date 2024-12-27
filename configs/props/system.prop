@@ -11,6 +11,7 @@ ro.hardware.alter=Hisilicon Kirin 930
 ro.sf.lcd_density=240
 ro.opengles.version=196608
 ro.config.mmu_en=1
+persist.panel.orientation=90
 
 # HWUI
 ro.hwui.texture_cache_size=48
