@@ -32,6 +32,9 @@ TARGET_BOOTLOADER_BOARD_NAME := hi3635
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
+# Dex-Preopt
+WITH_DEXPREOPT := true
+
 # Display
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 SF_START_GRAPHICS_ALLOCATOR_SERVICE := true
@@ -50,6 +53,9 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_SOURCE := kernel/huawei/liszt
 TARGET_KERNEL_CONFIG := liszt_defconfig
 
+# Manifest
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
+
 # Partitions
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -67,6 +73,9 @@ BOARD_VENDOR_PLATFORM := hi3635
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.hi3635
 
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy
