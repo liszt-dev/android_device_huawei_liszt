@@ -37,6 +37,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
 
+# Debug
+ifeq ($(ENABLE_DEBUG),true)
+PRODUCT_PACKAGES += \
+    dlopen32 \
+    dlopen64
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.magic.api.version=0.1 \
+    security.perf_harden=0 \
+    ro.adb.secure=0 \
+    ro.secure=0
+endif
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -146,11 +159,7 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.magic.api.version=0.1 \
-    persist.sys.usb.config=mtp,adb \
-    ro.secure=0 \
-    security.perf_harden=0 \
-    ro.adb.secure=0
+    persist.sys.usb.config=mtp,adb
 
 # Vibrator
 PRODUCT_PACKAGES += \
