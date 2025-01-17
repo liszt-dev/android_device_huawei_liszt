@@ -157,7 +157,7 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,adb
+    persist.sys.usb.config=mtp
 
 # Vibrator
 PRODUCT_PACKAGES += \
