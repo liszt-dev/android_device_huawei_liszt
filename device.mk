@@ -31,6 +31,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
     $(DEVICE_PATH)/audio/topazhp.cfg:system/etc/topazhp.cfg
 
+# Carrier
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carrier=wifi-only
+
 # Charger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.enable_boot_charger_mode=0

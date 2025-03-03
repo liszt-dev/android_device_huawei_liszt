@@ -64,5 +64,11 @@ service wpa_supplicant /system/bin/wpa_supplicant -d \
     disabled
     oneshot
 
+on property:ro.carrier=wifi-only
+    stop ril-daemon
+    stop qmuxd
+    stop netmgrd
+    setprop ro.radio.noril 1
+
 on property:ro.hardware.alter=*
     write /proc/sys/kernel/hardware_alter ${ro.hardware.alter}
