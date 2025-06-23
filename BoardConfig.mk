@@ -82,6 +82,7 @@ BOARD_KERNEL_CMDLINE := \
     mem=3072M \
     coherent_pool=512K \
     mmcparts=mmcblk0:p1(vrl),p2(vrl_backup),p6(modemnvm_factory),p9(splash),p10(modemnvm_backup),p11(modemnvm_img),p12(modemnvm_system),p14(3rdmodemnvm),p15(3rdmodemnvmback),p17(modem_om),p20(modemnvm_update),p30(modem),p31(modem_dsp),p32(dfx),p33(3rdmodem) \
+    androidboot.hardware=hi3635 \
     androidboot.selinux=permissive \
     ate_enable=true
 
