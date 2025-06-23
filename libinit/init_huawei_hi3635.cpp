@@ -62,20 +62,14 @@ void vendor_load_properties() {
     std::string model;
 
     if (android::base::ReadFileToString(PRODUCT_NAME, &model)) {
-        if (model.find("801W") != std::string::npos) {
-            set_ro_build_prop("model", "M2-801W");
+        if (model.find("A01L") != std::string::npos) {
+            set_ro_build_prop("model", "M2-A01L");
         }
-        else if (model.find("801L") != std::string::npos) {
-            set_ro_build_prop("model", "M2-801L");
-        }
-        else if (model.find("802L") != std::string::npos) {
-            set_ro_build_prop("model", "M2-802L");
-        }
-        else if (model.find("803L") != std::string::npos) {
-            set_ro_build_prop("model", "M2-803L");
+        else if (model.find("A01W") != std::string::npos) {
+            set_ro_build_prop("model", "M2-A01W");
         }
         else {
-            set_ro_build_prop("model", "MediaPad M2 8.0");
+            set_ro_build_prop("model", "MediaPad M2 10.0");
         }
     }
 
