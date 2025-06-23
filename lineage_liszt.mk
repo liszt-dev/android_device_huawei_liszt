@@ -16,11 +16,11 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Device identifier.
-PRODUCT_DEVICE := mozart
-PRODUCT_NAME := lineage_mozart
+PRODUCT_DEVICE := liszt
+PRODUCT_NAME := lineage_liszt
 PRODUCT_BRAND := huawei
 PRODUCT_MANUFACTURER := Huawei
-PRODUCT_MODEL := MediaPad M2 8.0
+PRODUCT_MODEL := MediaPad M2 10.0
 
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_GMS_CLIENTID_BASE := android-huawei

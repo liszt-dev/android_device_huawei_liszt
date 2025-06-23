@@ -60,4 +60,4 @@ done
 
 }
 
-clear_set mozart
+clear_set liszt

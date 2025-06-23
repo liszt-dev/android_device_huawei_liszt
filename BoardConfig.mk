@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/huawei/mozart
+DEVICE_PATH := device/huawei/liszt
 
 # Architecture
 TARGET_ARCH := arm64
@@ -19,7 +19,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := hi3635,mozart
+TARGET_OTA_ASSERT_DEVICE := hi3635,liszt
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
@@ -91,8 +91,8 @@ BOARD_MKBOOTIMG_ARGS := \
     --tags_offset 0xffb88000
 
 BOARD_KERNEL_IMAGE_NAME := Image
-TARGET_KERNEL_SOURCE := kernel/huawei/mozart
-TARGET_KERNEL_CONFIG := lineage_mozart_defconfig
+TARGET_KERNEL_SOURCE := kernel/huawei/liszt
+TARGET_KERNEL_CONFIG := lineage_liszt_defconfig
 
 # Malloc
 MALLOC_SVELTE := true

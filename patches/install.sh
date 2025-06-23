@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROM=mozart
+ROM=liszt
 CLEAR=${2}
 THISDIR=$PWD
 TOPDIR="$THISDIR/../../../../"

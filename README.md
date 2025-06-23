@@ -1,4 +1,4 @@
-## Android device tree for Huawei MediaPad M2 8.0 (mozart)
+## Android device tree for Huawei MediaPad M2 10.0 (liszt)
 
 ```
 #

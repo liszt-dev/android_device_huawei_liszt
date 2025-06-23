@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_mozart.mk
+    $(LOCAL_DIR)/lineage_liszt.mk

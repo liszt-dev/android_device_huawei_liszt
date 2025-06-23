@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/huawei/mozart
+DEVICE_PATH := device/huawei/liszt
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -206,4 +206,4 @@ PRODUCT_PACKAGES += \
 include hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk
 
 ## Inherit vendor blobs
-$(call inherit-product, vendor/huawei/mozart/mozart-vendor.mk)
+$(call inherit-product, vendor/huawei/liszt/liszt-vendor.mk)
