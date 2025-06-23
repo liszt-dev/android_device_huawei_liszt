@@ -23,17 +23,13 @@ inline const char* BtmGetDefaultName()
 	char device[92];
 	property_get("ro.product.model", device, "");
 
-        if (strstr(device, "M2-801W") != NULL) {
-            return "M2-801W";
-        } else if (strstr(device, "M2-801L") != NULL) {
-            return "M2-801L";
-        } else if (strstr(device, "M2-802L") != NULL) {
-            return "M2-802L";
-        } else if (strstr(device, "M2-803L") != NULL) {
-            return "M2-803L";
+        if (strstr(device, "M2-A01L") != NULL) {
+            return "M2-A01L";
+        } else if (strstr(device, "M2-A01W") != NULL) {
+            return "M2-A01W";
         }
 
-	return "MediaPad M2 8.0";
+	return "MediaPad M2 10.0";
 }
 
 #define BTM_DEF_LOCAL_NAME   BtmGetDefaultName()
