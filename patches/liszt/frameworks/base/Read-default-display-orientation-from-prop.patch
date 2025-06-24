@@ -1,0 +1,66 @@
+From 736ba29368cd9ed15764b2ff73aa13953e67b188 Mon Sep 17 00:00:00 2001
+From: schwienernitzel <pfelix0803@gmail.com>
+Date: Tue, 24 Jun 2025 21:16:07 +0200
+Subject: [PATCH] Read default display orientation from prop
+
+Change-Id: Ieae5fdb92f15de93764d8fbba384d351fd69d38f
+Signed-off-by: schwienernitzel <pfelix0803@gmail.com>
+---
+ .../java/com/android/server/policy/PhoneWindowManager.java   | 5 +++--
+ services/core/java/com/android/server/wm/DisplayContent.java | 3 ++-
+ 2 files changed, 5 insertions(+), 3 deletions(-)
+
+diff --git a/services/core/java/com/android/server/policy/PhoneWindowManager.java b/services/core/java/com/android/server/policy/PhoneWindowManager.java
+index ef8fb37a..a53f5558 100644
+--- a/services/core/java/com/android/server/policy/PhoneWindowManager.java
++++ b/services/core/java/com/android/server/policy/PhoneWindowManager.java
+@@ -2695,6 +2695,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
+             return;
+         }
+         mDisplay = display;
++        mUserRotation = SystemProperties.getInt("persist.panel.orientation", 0) / 90;
+ 
+         final Resources res = mContext.getResources();
+         int shortSize, longSize;
+@@ -7998,7 +7999,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
+         }
+ 
+         if (mForceDefaultOrientation) {
+-            return Surface.ROTATION_0;
++            return mUserRotation;
+         }
+ 
+         synchronized (mLock) {
+@@ -8159,7 +8160,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
+                     if (preferredRotation >= 0) {
+                         return preferredRotation;
+                     }
+-                    return Surface.ROTATION_0;
++                    return mUserRotation;
+             }
+         }
+     }
+diff --git a/services/core/java/com/android/server/wm/DisplayContent.java b/services/core/java/com/android/server/wm/DisplayContent.java
+index 2ee022c0..c515ceec 100644
+--- a/services/core/java/com/android/server/wm/DisplayContent.java
++++ b/services/core/java/com/android/server/wm/DisplayContent.java
+@@ -133,6 +133,7 @@ import android.os.Handler;
+ import android.os.IBinder;
+ import android.os.RemoteException;
+ import android.os.SystemClock;
++import android.os.SystemProperties;
+ import android.os.Trace;
+ import android.util.ArraySet;
+ import android.util.DisplayMetrics;
+@@ -259,7 +260,7 @@ class DisplayContent extends WindowContainer<DisplayContent.DisplayChildWindowCo
+      *
+      * @see #updateRotationUnchecked()
+      */
+-    private int mRotation = 0;
++    private int mRotation = SystemProperties.getInt("persist.panel.orientation", Surface.ROTATION_0) / 90;
+ 
+     /**
+      * Last applied orientation of the display.
+-- 
+2.25.1
+
