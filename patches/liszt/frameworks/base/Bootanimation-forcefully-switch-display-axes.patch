@@ -1,0 +1,30 @@
+From 9005fb39650c74e102c51cd6fd2174ca468e8ffb Mon Sep 17 00:00:00 2001
+From: schwienernitzel <pfelix0803@gmail.com>
+Date: Thu, 26 Jun 2025 21:36:12 +0200
+Subject: [PATCH] Bootanimation switch display axis before creating native
+ surface
+
+Change-Id: I285505f0ed0a413707581a7d3981039cf541bbd1
+Signed-off-by: schwienernitzel <pfelix0803@gmail.com>
+---
+ cmds/bootanimation/BootAnimation.cpp | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/cmds/bootanimation/BootAnimation.cpp b/cmds/bootanimation/BootAnimation.cpp
+index ed6c25dc..e9654696 100644
+--- a/cmds/bootanimation/BootAnimation.cpp
++++ b/cmds/bootanimation/BootAnimation.cpp
+@@ -259,6 +259,10 @@ status_t BootAnimation::readyToRun() {
+     if (status)
+         return -1;
+ 
++    int temp = dinfo.h;
++    dinfo.h = dinfo.w;
++    dinfo.w = temp;
++
+     // create the native surface
+     sp<SurfaceControl> control = session()->createSurface(String8("BootAnimation"),
+             dinfo.w, dinfo.h, PIXEL_FORMAT_RGB_565);
+-- 
+2.25.1
+
